@@ -1,3 +1,0 @@
-Number of Fishes Caught (ALL TIME): 14265
-Number of program cycles (ALL TIME): 365255
-Seconds Spent Fishin': 178923
