@@ -5,8 +5,12 @@ import time
 import ctypes
 from ctypes.wintypes import HWND, DWORD, RECT
 
+pytesseract_path = input(r"What is the path of your Tesseract.exe? Please put the full path (use the copy as path option via rightclicking the .exe) here. It'll look like C:\Program Files\Tesseract-OCR\tesseract.exe for instance: ")
+
 # YOU NEED TO PUT THE FILEPATH (exactly) IN THESE QUOTATION MARKS BELOW
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+pytesseract_path = pytesseract_path[1:-1:1]
+print(pytesseract_path)
+pytesseract.pytesseract.tesseract_cmd = pytesseract_path
 
 class Screenshot_Reader:
     def __init__(self):
