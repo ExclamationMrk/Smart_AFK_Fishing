@@ -5,6 +5,7 @@ import time
 import ctypes
 from ctypes.wintypes import HWND, DWORD, RECT
 
+# YOU NEED TO PUT THE FILEPATH (exactly) IN THESE QUOTATION MARKS BELOW
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 class Screenshot_Reader:
